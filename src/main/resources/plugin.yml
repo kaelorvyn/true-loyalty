@@ -1,0 +1,17 @@
+name: TrueLoyalty
+version: 1.0.0
+main: com.bloodsoil.trueloyalty.TrueLoyaltyPlugin
+api-version: '1.21'
+description: 真·忠诚 - 三叉戟不死图腾与幻影神罚
+author: Blood & Soil
+
+commands:
+  trueloyalty:
+    description: 真·忠诚管理命令
+    usage: /trueloyalty <give|book|reload> [player]
+    permission: trueloyalty.admin
+
+permissions:
+  trueloyalty.admin:
+    description: 管理真·忠诚附魔
+    default: op

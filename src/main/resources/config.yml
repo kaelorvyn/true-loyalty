@@ -1,0 +1,79 @@
+debug: true
+
+enchantment:
+  id: bloodsoil:true_loyalty
+  chance-to-replace-loyalty: 0.0
+
+trigger:
+  indirect-combat-causes:
+    - DRAGON_BREATH
+    - WITHER
+    - POISON
+    - MAGIC
+    - LIGHTNING
+  indirect-combat-window-ticks: 100
+
+titles:
+  trigger: "休伤吾主！"
+  end: "三叉戟为你耗尽力量"
+
+effects:
+  absorption-amplifier: 1
+  absorption-seconds: 5
+  regeneration-amplifier: 1
+  regeneration-seconds: 45
+  fire-resistance-amplifier: 0
+  fire-resistance-seconds: 40
+  resistance-amplifier: 1
+  resistance-seconds: 5
+
+phantoms:
+  count: 128
+  start-radius: 2.0
+  sphere-top-height: 15.0
+  arc-duration-ticks: 44
+  converge-duration-ticks: 18
+  hold-ticks: 8
+  ring-hold-ticks: 100
+  ring-rotation-turns: 15.0
+  ring-damage-per-tick: 1.5
+  ring-damage-every-ticks: 4
+  ring-damage-band: 1.5
+  ring-knockback: 0.8
+  sphere-spiral-turns: 0.6
+  homing-speed: 3.0
+  homing-hit-distance: 5.0
+  homing-max-ticks: 240
+  target-radius: 64.0
+  target-vertical-range: 8.0
+  boss-search-radius: 64.0
+  boss-search-radius-y: 256.0
+  boss-priority-percent: 0.8
+  damage-per-trident: 15.0
+  strike-window-ticks: 100
+  piercing-level: 3
+  lightning: true
+
+particles:
+  trigger-totem: 60
+  trigger-endrod: 80
+  trigger-ring: 24
+  spawn-per-trident-endrod: 10
+  spawn-per-trident-spark: 4
+  sphere-burst-endrod: 120
+  sphere-burst-crit: 60
+  trail-endrod: 8
+  trail-spark-every-ticks: 2
+  sphere-glow: 24
+  converge-totem: 40
+  converge-endrod: 50
+  homing-endrod: 5
+  homing-crit: 3
+  target-mark: 2
+  hit-crit: 40
+  hit-endrod: 30
+  hit-totem: 15
+  vanish-endrod: 10
+  vanish-totem: 5
+  end-totem: 50
+  end-endrod: 60
